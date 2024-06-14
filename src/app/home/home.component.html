@@ -1,0 +1,25 @@
+<p>home works!</p>
+<h1>{{names}}</h1>
+
+<h1>changE:{{getcc}}</h1>
+<h1>dep:{{names}}</h1>
+<form>
+    <input type="text" (change)="getc($event)">
+    <input #myname type="text">
+    <input type="button" (click)="getname(myname)" value="NAME">
+</form>
+
+<h1 [style]="colorss">heyy</h1>
+
+<h1>two way</h1>
+<form action="">
+    <input [(ngModel)]="twoway" name="two"  type="text" >
+</form>
+<h1>{{twoway}}</h1>
+
+<h1>structural diective</h1>
+<div *ngIf="box" style="height: 25px; width:80px; background-color: blue;">
+
+</div>
+<button (click)="boxx()">box</button>
+
